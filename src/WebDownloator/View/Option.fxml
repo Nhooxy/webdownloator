@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #777;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WebDownloator.View.OptionController">
+   <children>
+      <Label layoutX="47.0" layoutY="163.0" prefHeight="15.0" prefWidth="148.0" text="%label.langue" textFill="WHITE" AnchorPane.leftAnchor="40.0">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="44.0" layoutY="69.0" prefHeight="55.0" prefWidth="148.0" text="%label.dossier.telechargement" textFill="WHITE" wrapText="true" AnchorPane.leftAnchor="40.0">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <JFXComboBox fx:id="langue" layoutX="239.0" layoutY="151.0" prefHeight="25.0" prefWidth="233.0" promptText="%label.selectionner" AnchorPane.rightAnchor="140.0" />
+      <JFXTextField fx:id="dossierTelechargement" layoutX="234.0" layoutY="77.0" prefHeight="23.0" prefWidth="233.0" AnchorPane.rightAnchor="140.0" />
+      <JFXButton layoutX="482.0" layoutY="75.0" onAction="#parcourir" ripplerFill="#777777" style="-fx-background-color: #444;" text="%button.parcourir" textFill="WHITE" AnchorPane.rightAnchor="30.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="418.0" layoutY="290.0" onAction="#save" ripplerFill="#777777" style="-fx-background-color: #444;" text="%button.save" textFill="WHITE" AnchorPane.rightAnchor="100.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="323.0" layoutY="290.0" onAction="#retour" ripplerFill="#777777" style="-fx-background-color: #444;" text="%button.annuler" textFill="WHITE" AnchorPane.rightAnchor="250.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

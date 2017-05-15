@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="500.0" minWidth="800.0" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WebDownloator.View.LayoutController">
+   <left>
+      <AnchorPane minHeight="500.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane minWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <JFXButton fx:id="boutonAccueil" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#accueilView" ripplerFill="#777777" style="-fx-background-color: #555;" text="%menu.titre" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="boutonTelecharger" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#telechargerView" ripplerFill="#777777" style="-fx-background-color: #555;" text="%menu.telecharger" textFill="WHITE" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="boutonVisualiser" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#visualiserView" ripplerFill="#777777" style="-fx-background-color: #555;" text="%menu.visualiser" textFill="WHITE" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="boutonOption" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#optionView" ripplerFill="#777777" style="-fx-background-color: #555;" text="%menu.option" textFill="WHITE" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
